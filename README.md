@@ -18,11 +18,11 @@ A React Native component which can show time count down starting from current ti
 
  Name           | Description                                 | Type     | Required  | Default value   
 :---------------|:------------------------------------------- |:---------|:---------:|:--------------
- containerStyle        | Style of component's container                    | object   | no       |  {}         
+ containerStyle        | Style of component's container                    | object   | no       |  `{}`         
  endTime       | End time value                 | string  | yes          |           
- label        | Text show beside time      | string | no       | ''          
+ label        | Text show beside time      | string | no       | `''`          
  onTimeIsUp           | Callback called when time is up                          | function  | yes          |           
- textStyle         | Style of time value text                       | object  | no          | {}                
+ textStyle         | Style of time value text                       | object  | no          | `{}`                
  
 
 ```
