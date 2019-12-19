@@ -1,3 +1,3 @@
-import CustomComponent from './src/custom-component';
+import Countdown from './src/count-down';
 
-export default CustomComponent;
+export default Countdown;
