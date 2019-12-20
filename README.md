@@ -1,16 +1,15 @@
-# Countdown
-A React Native component which can show time count down starting from current time
+# rn-count-down
+A React Native component which can show time count down starting from current time.
 
+![](countdown.gif)
 
 ## Usage
 
 ```jsx
     <Countdown
       label="Time:"
-      endTime={this.props.endTime}
-      onTimeIsUp={() => { onTimeIsUp(); }}
-      textStyle={styles.text}
-      containerStyle={styles.container}
+      endTime="2019-12-19T17:32+07:00"
+      onTimeIsUp={() => { console.log('Time is up!'); }}
     />
 ```
 
@@ -19,7 +18,7 @@ A React Native component which can show time count down starting from current ti
  Name           | Description                                 | Type     | Required  | Default value   
 :---------------|:------------------------------------------- |:---------|:---------:|:--------------
  containerStyle        | Style of component's container                    | object   | no       |  `{}`         
- endTime       | End time value                 | string  | yes          |           
+ endTime       | End time value in date type                 | string  | yes          |           
  label        | Text show beside time      | string | no       | `''`          
  onTimeIsUp           | Callback called when time is up                          | function  | yes          |           
  textStyle         | Style of time value text                       | object  | no          | `{}`                
@@ -29,8 +28,3 @@ A React Native component which can show time count down starting from current ti
 
 
 ```
-
-
-## Note:
-* The `endTime` props value should be in date type, for example: `2019-12-19T17:32:09.4753717+07:00
-`
