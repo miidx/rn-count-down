@@ -1,21 +1,21 @@
 {
-  "name": "@miidx/rn-custom-component",
+  "name": "@miidx/rn-count-down",
   "version": "0.9.0",
-  "description": "This is template repo for creating custom component",
+  "description": "A React Native component which can show time count down starting from current time.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miidx/rn-component-template.git"
+    "url": "git+https://github.com/miidx/rn-count-down.git"
   },
-  "author": "firstyuyu",
+  "author": "bellatashia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miidx/rn-component-template/issues"
+    "url": "https://github.com/miidx/rn-count-down/issues"
   },
-  "homepage": "https://github.com/miidx/rn-component-template#readme",
+  "homepage": "https://github.com/miidx/rn-count-down#readme",
   "dependencies": {
     
   },

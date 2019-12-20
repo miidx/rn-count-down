@@ -1,16 +1,15 @@
-# Component Name
-Write the component overview here
+# rn-count-down
+A React Native component which can show time count down starting from current time.
 
+![](countdown.gif)
 
 ## Usage
 
 ```jsx
-    <ComponentName
-        caption="Submit"
-        onPress={somefunction}
-        bold
-        italic
-        color="#00f"
+    <Countdown
+      label="Time:"
+      endTime="2019-12-19T17:32+07:00"
+      onTimeIsUp={() => { console.log('Time is up!'); }}
     />
 ```
 
@@ -18,30 +17,14 @@ Write the component overview here
 
  Name           | Description                                 | Type     | Required  | Default value   
 :---------------|:------------------------------------------- |:---------|:---------:|:--------------
- caption        | Caption of the component                    | string   | yes       |           
- disabled       | Make the component disabled                 | boolean  |           | false          
- onPress        | Callback when the component is pressed      | function | yes       |           
- bold           | Make the text bold                          | boolean  |           | false          
- italic         | Make the text italic                        | boolean  |           | false          
- color          | The color of the component                  | string   |           | `#2f2f2f`          
- disabledColor  | The color when the component is disabled    | string   |           | `#8C8C8C`        
-
+ containerStyle        | Style of component's container                    | object   | no       |  `{}`         
+ endTime       | End time value in complete ISO-8601 date time format `YYYY-MM-DDTHH:mmZ`. `YYYY` is 4 digit year, `MM` is month number, `DD` is day of month, `HH` is hours in 24 hour time, `mm` is minutes, and `Z` is offset from UTC time, such as `+-HH:mm`. Adding seconds `s` and fractional seconds `SS` are optional                 | string  | yes          |           
+ label        | Text shown beside time count down      | string | no       | `''`          
+ onTimeIsUp           | Callback called when time is up                          | function  | yes          |           
+ textStyle         | Style of time value text                       | object  | no          | `{}`                
+ 
 
 ```
 
 
 ```
-
-
-## Note:
-After cloning this repo, don't forget to edit these files:
-
-1. Edit these fields inside `package.json` file
-   - name
-   - description
-   - url for `repository`, `bugs`, and `homepage`
-   - author
-
-2. Edit component name inside `index.js` file.
-3. Edit component name inside `src/custom-component.js` file.
-4. Rename `src/custom-component.js` file appropriately.
