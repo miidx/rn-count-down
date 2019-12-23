@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/miidx/rn-count-down#readme",
   "dependencies": {
-    
+    "moment": "^2.24.0"
   },
   "peerDependencies": {
     "react": "*",
