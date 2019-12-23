@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { Body } from './labels';
-import { StyleShape } from '../type';
 
 const styles = {
   container: {
@@ -54,15 +52,15 @@ export default class Countdown extends Component {
     const { textStyle, label } = this.props;
     if (label) {
       return (
-          <Body style={textStyle}>
-            {`${label} ${this.state.minute}:${this.state.second}`}
-          </Body>
+        <Text style={textStyle}>
+          {`${label} ${this.state.minute}:${this.state.second}`}
+        </Text>
       )
     }
     return (
-      <Body style={textStyle}>
+      <Text style={textStyle}>
         {`${this.state.minute}:${this.state.second}`}
-      </Body>
+      </Text>
     )
   }
 
@@ -75,6 +73,11 @@ export default class Countdown extends Component {
     );
   }
 }
+
+const StyleShape = PropTypes.objectOf(PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number,
+]));
 
 Countdown.propTypes = {
   endTime: PropTypes.string.isRequired,

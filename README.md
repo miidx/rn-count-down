@@ -3,6 +3,12 @@ A React Native component which can show time count down starting from current ti
 
 ![](countdown.gif)
 
+## Installation
+
+```
+  npm i @miidx/rn-count-down
+```
+
 ## Usage
 
 ```jsx
